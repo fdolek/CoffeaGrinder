@@ -146,8 +146,6 @@ def xsecEval(ds):
         if "GluGlu_HToInvisible_M600_13TeV_powheg_pythia8" in ds: return 1.001
         if "GluGlu_HToInvisible_M800_13TeV_powheg_pythia8" in ds: return 0.4015
         if "GluGlu_HToInvisible_M1000_13TeV_powheg_pythia8" in ds: return 0.1845
-        if "thq" in ds: return 0.7927
-        if "thw" in ds: return 0.147
         if "ST_tch_DM-scalar_LO-100_1-13_TeV" in ds: return 0.293*0.68
         if "ST_tch_DM-scalar_LO-300_1-13_TeV" in ds: return 0.03202*0.68
         if "ST_tch_DM-scalar_LO-500_1-13_TeV" in ds: return 0.004996*0.68
@@ -325,5 +323,3 @@ def xsecEval(ds):
         if "ZprimeToA0hToA0chichihbb_2HDM_MZp-1000_MA0-300_13TeV-madgraph" in ds: return 0.14771*0.578
 
         return 1.0
-
-
