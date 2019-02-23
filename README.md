@@ -10,19 +10,27 @@
 * uproot 
 
 ```
-pip install numpy==1.15.2 --user
+pip install numpy --user
 pip install jupyter --user
 pip install ipython # you may need to install it through conda: conda install ipython
 pip install histbook --user
 pip install vega==1.1 --user
 pip install vegascope --user
-pip install uproot==3.3.0 --user
-pip install awkward==0.7.0 --user
+pip install uproot --user
+pip install awkward --user
 pip install fnal_column_analysis_tools -U
 ```
-Note: you might need to upgrade pip to version 18 to get Jupyter 4.3 or above  (`pip install --upgrade pip`)
+Note: you might need to upgrade pip to version 18 to get Jupyter 4.3 or above  (`pip install --upgrade pip`). 
 
-### Setup
+To upgrade the packages after they have been installed, use the following command.
+```
+pip install package_name --user --upgrade
+```
+
+### Code versions
+There are two ways to run the notebooks. Those with *_uproot.ipynb can be run on your laptop using local nanoAOD files copied to your laptop from the LPC. The notebooks with *_striped.ipynb require access to the striped cluster. The uproot notebooks are useful for doing development and making sure your setup is correct. The actual analysis code will be run over all datasets using the striped cluster. 
+
+### Setup for Striped
 Once you have installed the prerequisites, set up the striped client
 ```
   git clone http://cdcvs.fnal.gov/projects/nosql-ldrd striped     
@@ -30,16 +38,37 @@ Once you have installed the prerequisites, set up the striped client
   python setup.py install --user 
 ```
 
-Now on a different directory, clone Coffea repository
+Now in a different directory, clone the Coffea repository
 ```
   git clone https://github.com/CoffeaTeam/CoffeaGrinder.git
   
  ```
+ 
+ Ask Allie if you do not have a password to access Striped. Your password XX and your username YY need to be placed in a striped.yaml file with the following format. 
+ ```
+ JobServer: {
+ host: ifdb02.fnal.gov,
+ port: 8766
+ }
+ Username: YY
+ Password: XX
+ ```
+ 
+ Change the passwords to protect your password from reading by group and others:
+ ```
+ chmod 0700 striped.yaml
+ ```
+ 
+ The file location needs to be passed in using the "session" parameter in the jupyter notebook before launching the jobs:
+ ```
+ session = Session("/Users/ahall/striped.yaml")
+
+ ```
 ### Run
-Launch Jypyter Notebook
+Launch Jupyter Notebook
 ```
    cd CoffeaGrinder/
    jupyter notebook
 ```
-It should open a new page in your default browser. If not , you can follow the link displayed in the terminal.  At the page you will find the directories and files from the location you ran jupyter notebook. select one of the samples to run it.
+It should open a new page in your default browser. If not, you can follow the link displayed in the terminal.  At the page you will find the directories and files from the location you ran jupyter notebook. select one of the samples to run it.
 
