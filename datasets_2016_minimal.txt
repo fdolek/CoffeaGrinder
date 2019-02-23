@@ -1,0 +1,21 @@
+        # NLO W->lnu
+	WJetsToLNu_Wpt-50To100_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 WJets_pt50to100  MC 3298.37
+        WJetsToLNu_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 WJets_pt100to250 MC 677.82
+        WJetsToLNu_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 WJets_pt250to400 MC 24.083
+        WJetsToLNu_Pt-400To600_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 WJets_pt400to600 MC 3.0563
+        WJetsToLNu_Pt-600ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 WJets_pt600toinf MC 0.4602
+
+        # NLO Z->ll
+        DYJetsToLL_Pt-50To100_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZJets_pt50to100 MC 374.6800
+        DYJetsToLL_Pt-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZJets_pt100to250 MC 86.5200
+        DYJetsToLL_Pt-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZJets_pt250to400 MC 3.3247
+        DYJetsToLL_Pt-400To650_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZJets_pt400to650 MC 0.4491
+        DYJetsToLL_Pt-650ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZJets_pt650toinf MC 0.0422
+
+        # NLO Z->nunu
+	DYJetsToNuNu_PtZ-50To100_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8  ZtoNuNu_pt50to100  MC 688.92*0.971
+        DYJetsToNuNu_PtZ-100To250_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZtoNuNu_pt100to250 MC 3*54.8229
+        DYJetsToNuNu_PtZ-250To400_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZtoNuNu_pt250to400 MC 3*2.0705
+        DYJetsToNuNu_PtZ-400To650_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZtoNuNu_pt400to650 MC 3*0.2779
+        DYJetsToNuNu_PtZ-650ToInf_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8 ZtoNuNu_pt650toinf MC 3*0.0261
+            
