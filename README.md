@@ -67,11 +67,11 @@ Now in a different directory, clone the Coffea repository
  ```
 ### Setting up Fermilab VPN¶
 
-*Go to [here!](https://vpn.fnal.gov) and log in with your Services account 
-    *This will automatically install CISCO AnyConnect VPN 
-*Open CISCO AnyConnect VPN
-*Type "vpn.fnal.gov" and click connect
-*Log in with your Services account username and password
+* Go to [here!](https://vpn.fnal.gov) and log in with your Services account 
+    * This will automatically install CISCO AnyConnect VPN 
+* Open CISCO AnyConnect VPN
+* Type "vpn.fnal.gov" and click connect
+* Log in with your Services account username and password
 
 
 ### Run
