@@ -30,7 +30,8 @@ pip install package_name --user --upgrade
 ### Code versions
 There are two ways to run the notebooks. Those with *_uproot.ipynb can be run on your laptop using local nanoAOD files copied to your laptop from the LPC. The notebooks with *_striped.ipynb require access to the striped cluster. The uproot notebooks are useful for doing development and making sure your setup is correct. The actual analysis code will be run over all datasets using the striped cluster. 
 
-### Setup for Striped
+### Striped environment new Installation¶
+
 Once you have installed the prerequisites, set up the striped client
 ```
   git clone http://cdcvs.fnal.gov/projects/nosql-ldrd striped     
@@ -64,6 +65,15 @@ Now in a different directory, clone the Coffea repository
  session = Session("/Users/ahall/striped.yaml")
 
  ```
+### Setting up Fermilab VPN¶
+
+*Go to [here!](https://vpn.fnal.gov) and log in with your Services account 
+    *This will automatically install CISCO AnyConnect VPN 
+*Open CISCO AnyConnect VPN
+*Type "vpn.fnal.gov" and click connect
+*Log in with your Services account username and password
+
+
 ### Run
 Launch Jupyter Notebook
 ```
